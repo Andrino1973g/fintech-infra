@@ -1,7 +1,7 @@
 variable "ami_id" {
   description = "The AMI ID for the Jenkins server"
   type        = string
-  default     = "ami-0f226ae5ce4b11922"
+  default     = "ami-020cba7c55df1f615"
 }
 
 variable "instance_type" {
@@ -13,13 +13,13 @@ variable "instance_type" {
 variable "key_name" {
   description = "The key name for the Jenkins server"
   type        = string
-  default     = "DevOps_Train2024"
+  default     = "my-test-vpc-key"
 }
 
 variable "main-region" {
   description = "The AWS region to deploy resources"
   type        = string
-  default     = "us-west-2"
+  default     = "us-west-1"
 }
 
 variable "security_group_id" {
